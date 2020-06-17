@@ -6,7 +6,7 @@ Chips/Tags input component for Blazor
 
 
 ### Installation
-1. Install the [NuGet](https://www.nuget.org/packages/Sve.Blazor.InfiniteScroll/) package:
+1. Install the [NuGet](https://www.nuget.org/packages/Sve.Blazor.ChipsInput/) package:
 
    ```
    > dotnet add package Sve.Blazor.ChipsInput

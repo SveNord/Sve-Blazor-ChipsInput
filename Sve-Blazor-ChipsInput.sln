@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sve-Blazor-ChipsInput", "Sve-Blazor-ChipsInput\Sve-Blazor-ChipsInput.csproj", "{77A4812C-EA08-4367-92C9-2E89DEA32DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sve-Blazor-ChipsInput-Examples", "Sve-Blazor-ChipsInput-Examples\Sve-Blazor-ChipsInput-Examples.csproj", "{593B7F3A-2728-49F2-AB53-EC10C4670C58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77A4812C-EA08-4367-92C9-2E89DEA32DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A4812C-EA08-4367-92C9-2E89DEA32DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A4812C-EA08-4367-92C9-2E89DEA32DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A4812C-EA08-4367-92C9-2E89DEA32DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593B7F3A-2728-49F2-AB53-EC10C4670C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593B7F3A-2728-49F2-AB53-EC10C4670C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593B7F3A-2728-49F2-AB53-EC10C4670C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593B7F3A-2728-49F2-AB53-EC10C4670C58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5E7A23A-A7C2-46C9-A226-8D3AFF7ECBD9}
+	EndGlobalSection
+EndGlobal

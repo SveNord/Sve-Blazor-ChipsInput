@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Sve.Blazor.ChipsInput.Examples</RootNamespace>
+    <AssemblyName>Sve.Blazor.ChipsInput.Examples</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sve-Blazor-ChipsInput\Sve-Blazor-ChipsInput.csproj" />
+  </ItemGroup>
+
+</Project>

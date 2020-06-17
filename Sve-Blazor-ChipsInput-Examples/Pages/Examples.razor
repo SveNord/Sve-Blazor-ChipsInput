@@ -1,0 +1,85 @@
+﻿@page "/"
+@page "/examples"
+
+@using Sve.Blazor.ChipsInput.Examples.Data
+@inject WeatherForecastService ForecastService
+
+<h1>Chips/Tags input examples</h1>
+
+<h6>Basic</h6>
+<ChipsInput EnableBackspaceRemove="false"  Chips='new List<string>() { "awesome" }' />
+
+<br />
+
+<h6>Backspace remove</h6>
+<ChipsInput  Chips='new List<string>() { "awesome", "nice", "cool" }'/>
+
+<br />
+
+<h6>Built in validation</h6>
+<ChipsInput ShowValidationErrors="true"
+            MinValueLength="5"
+            MinValueLengthValidationMessage="The value needs to be at least 5 chars"
+            MaxValueLength="15"
+            MaxValueLengthValidationMessage="The value needs to be less than or equal to 15 chars"
+            MaxValueCount="2"
+            MaxValueCountValidationMessage="Only 2 values are allowed"
+            AllowEmptyValue="false"
+            AllowEmptyValueValidationMessage="No empty values are allowed" />
+
+<br />
+
+<h6>Custom validation</h6>
+<ChipsInput ShowValidationErrors="true"
+            CustomValidation="MyCustomValidation" />
+
+<br />
+
+<h6>Custom validation error template</h6>
+<ChipsInput ShowValidationErrors="true"
+            CustomValidation="MyCustomValidation">
+    <ValidationErrorTemplate Context="validationError">
+        <div class="alert alert-warning mt-2" role="alert">
+            @validationError
+        </div>
+    </ValidationErrorTemplate>
+</ChipsInput>
+
+<br />
+
+<h6>Prepend icon template</h6>
+<ChipsInput Chips='new List<string>() { "belgium"}'>
+    <PrependIconTemplate>
+        <i class="fas fa-map-marker"></i>
+    </PrependIconTemplate>
+</ChipsInput>
+
+<br />
+
+<h6>Limit allowed values (awesome, nice, cool)</h6>
+<ChipsInput ShowValidationErrors="true" AllowedValues='new List<string>() { "awesome", "nice", "cool" }' />
+
+<br />
+
+<h6>Custom styles</h6>
+<ChipsInput ChipClass="AccentChip" Chips='new List<string>() { "awesome", "nice", "cool" }'/>
+
+
+<br />
+
+<h6>Readonly chips</h6>
+<ChipsInput ReadonlyChips="true" Chips='new List<string>() { "awesome", "nice", "cool" }' />
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+
+    private void MyCustomValidation(ChipValidationArgs chipValidationArgs)
+    {
+        if (!chipValidationArgs.CurrentChip.StartsWith("a")) chipValidationArgs.ValidationErrors.Add("The chip value must start with an 'a'");
+    }
+}

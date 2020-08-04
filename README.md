@@ -39,7 +39,7 @@ Chips/Tags input component for Blazor
 | ChipsListClass                   | string                            | ""                                                        | The css class placed on the list tag of the chips            |
 | ChipsContainerClass              | string                            | ""                                                        | The css class placed on the container of the chips input     |
 | EnableBackspaceRemove            | bool                              | true                                                      | Indicates whether or not backspace will remove the last chip |
-| AllowDeleteOfReadonlyItems       | bool                              | true                                                      | Indicates whether or not readonly items can be deleted|
+| AllowDeleteOfReadonlyItems       | bool                              | false                                                     | Indicates whether or not readonly items can be deleted|
 | ShowValidationErrors             | bool                              | false                                                     | Indicates whether or not to show validation errors           |
 | AllowEmptyValue                  | bool                              | false                                                     | Indicates whether or not empty values are allowed as a value |
 | AllowEmptyValueValidationMessage | string                            | "An empty input is not allowed"                           | The validation message to use when the AllowEmptyValue rule is not respected |

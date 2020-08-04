@@ -7,7 +7,7 @@
     <AssemblyName>Sve.Blazor.ChipsInput</AssemblyName>
     <Nullable>enable</Nullable>
     <LangVersion>8.0</LangVersion>
-    <Version>1.0.0-alpha</Version>
+    <Version>1.0.1-alpha</Version>
     <Authors>Sven Matthys</Authors>
     <Product>SveBlazorChipsInput</Product>
     <Description>Blazor Chips/Tags input component</Description>
@@ -17,7 +17,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>blazor, chips, tags, input, chips-input, tags-input, tagsinput, chipsinput component</PackageTags>
     <PackageReleaseNotes>
-      - Initial major alpha release
+      - Readonly chips can now be deleted when property 'AllowDeleteOfReadonlyItems' is set to true
     </PackageReleaseNotes>
   </PropertyGroup>
 

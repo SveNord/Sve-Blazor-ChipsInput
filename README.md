@@ -24,6 +24,9 @@ Chips/Tags input component for Blazor
    Add the following using statement `@using Sve.Blazor.ChipsInput.Components` to one of the following: 
    - For global import add it to your  `_Imports.razor` file
    - For a scoped import add  it to your desired Blazor component
+   
+   Component tag to use `<ChipsInput />`
+   
 
 
 ## Usage
@@ -56,6 +59,8 @@ Chips/Tags input component for Blazor
 | InputBorderRadius                | double                            | .25                                                       | The border radius of the chip input container in rem         |
 | ChipBorderRadius                 | double                            | .25                                                       | The border radius of the chip in rem                         |
 | InputAttributes                  | Dictionary<string, object>        | Dictionary                                                | Custom attributes for the text input                         |
+| Placeholder                            | string                      | ""                                                      | String for the input placeholder                                       |
+| FontAwesomeCloseIcon                            | string                      | null                                                      | Classes to change close icon. Example: FontAwesomeCloseIcon="fas fa-times"                                       |
 
 ## License
 
